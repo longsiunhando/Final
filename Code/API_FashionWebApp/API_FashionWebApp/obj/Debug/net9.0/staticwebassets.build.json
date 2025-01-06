@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "vCwD3mjcsA3oRR5wGkP8/BStzG1KtX2+WCSKgGaRKKo=",
+  "Source": "API_FashionWebApp",
+  "BasePath": "_content/API_FashionWebApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
