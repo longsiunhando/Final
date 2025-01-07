@@ -4,6 +4,7 @@ using API_FashionWebApp.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API_FashionWebApp.Migrations
 {
     [DbContext(typeof(db_FashionWebApp))]
-    partial class db_FashionWebAppModelSnapshot : ModelSnapshot
+    [Migration("20250106171033_UpdateAppUserAndCartRelationship")]
+    partial class UpdateAppUserAndCartRelationship
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

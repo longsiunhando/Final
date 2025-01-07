@@ -21,7 +21,7 @@ namespace API_FashionWebApp.Models
 
         [Required]
         [StringLength(50)]
-        public string Status { get; set; } = "Pending"; // Trạng thái đơn hàng (Pending, Shipped, Delivered, Canceled, etc.)
+        public OrderStatus Status { get; set; } = OrderStatus.Pending; // Trạng thái đơn hàng (Pending, Shipping, Delivered, Canceled, etc.)
 
         [Required]
         [Column(TypeName = "decimal(18,2)")]
@@ -33,7 +33,7 @@ namespace API_FashionWebApp.Models
 
         [Required]
         [StringLength(100)]
-        public string PaymentMethod { get; set; } // Phương thức thanh toán (COD, Credit Card, PayPal, etc.)
+        public PaymentMethod PaymentMethod { get; set; } // Phương thức thanh toán (COD, Credit Card, PayPal, etc.)
 
         [Required]
         [StringLength(500)]
@@ -46,5 +46,19 @@ namespace API_FashionWebApp.Models
 
         // Navigation property - Liên kết với bảng OrderDetail
         public ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
+    }
+    public enum OrderStatus
+    {
+        Pending = 1,
+        Shipping = 2,
+        Delivered = 3,
+        Canceled = 4,
+    }
+    public enum PaymentMethod
+    {
+        COD = 1,
+        CreditCard = 2,
+        MoMo = 3,
+        PayPal = 4,
     }
 }

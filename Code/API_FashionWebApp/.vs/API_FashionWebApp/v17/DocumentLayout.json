@@ -3,32 +3,12 @@
   "WorkspaceRootPath": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|e:\\hn24_cpl.v_.net_07\\z_baitap\\final\\code\\api_fashionwebapp\\api_fashionwebapp\\data\\db_fashionwebapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|solutionrelative:api_fashionwebapp\\data\\db_fashionwebapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|e:\\hn24_cpl.v_.net_07\\z_baitap\\final\\code\\api_fashionwebapp\\api_fashionwebapp\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|solutionrelative:api_fashionwebapp\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|e:\\hn24_cpl.v_.net_07\\z_baitap\\final\\code\\api_fashionwebapp\\api_fashionwebapp\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|solutionrelative:api_fashionwebapp\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|e:\\hn24_cpl.v_.net_07\\z_baitap\\final\\code\\api_fashionwebapp\\api_fashionwebapp\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|solutionrelative:api_fashionwebapp\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|e:\\hn24_cpl.v_.net_07\\z_baitap\\final\\code\\api_fashionwebapp\\api_fashionwebapp\\migrations\\20250106111349_initialdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|solutionrelative:api_fashionwebapp\\migrations\\20250106111349_initialdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|e:\\hn24_cpl.v_.net_07\\z_baitap\\final\\code\\api_fashionwebapp\\api_fashionwebapp\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|solutionrelative:api_fashionwebapp\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Migrations\\20250106110130_InitialDB1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:API_FashionWebApp\\Migrations\\20250106110130_InitialDB1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Migrations\\20250106105724_InitialDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:API_FashionWebApp\\Migrations\\20250106105724_InitialDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|e:\\hn24_cpl.v_.net_07\\z_baitap\\final\\code\\api_fashionwebapp\\api_fashionwebapp\\services\\interfaces\\i_orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|solutionrelative:api_fashionwebapp\\services\\interfaces\\i_orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|e:\\hn24_cpl.v_.net_07\\z_baitap\\final\\code\\api_fashionwebapp\\api_fashionwebapp\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,32 +19,16 @@
       "RelativeMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|solutionrelative:api_fashionwebapp\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|e:\\hn24_cpl.v_.net_07\\z_baitap\\final\\code\\api_fashionwebapp\\api_fashionwebapp\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|solutionrelative:api_fashionwebapp\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|e:\\hn24_cpl.v_.net_07\\z_baitap\\final\\code\\api_fashionwebapp\\api_fashionwebapp\\services\\interfaces\\i_productvariantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|solutionrelative:api_fashionwebapp\\services\\interfaces\\i_productvariantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|e:\\hn24_cpl.v_.net_07\\z_baitap\\final\\code\\api_fashionwebapp\\api_fashionwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|solutionrelative:api_fashionwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|e:\\hn24_cpl.v_.net_07\\z_baitap\\final\\code\\api_fashionwebapp\\api_fashionwebapp\\viewmodels\\add_orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|solutionrelative:api_fashionwebapp\\viewmodels\\add_orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|e:\\hn24_cpl.v_.net_07\\z_baitap\\final\\code\\api_fashionwebapp\\api_fashionwebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|solutionrelative:api_fashionwebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|e:\\hn24_cpl.v_.net_07\\z_baitap\\final\\code\\api_fashionwebapp\\api_fashionwebapp\\models\\productvariant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|solutionrelative:api_fashionwebapp\\models\\productvariant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|e:\\hn24_cpl.v_.net_07\\z_baitap\\final\\code\\api_fashionwebapp\\api_fashionwebapp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|solutionrelative:api_fashionwebapp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|e:\\hn24_cpl.v_.net_07\\z_baitap\\final\\code\\api_fashionwebapp\\api_fashionwebapp\\models\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|solutionrelative:api_fashionwebapp\\models\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|e:\\hn24_cpl.v_.net_07\\z_baitap\\final\\code\\api_fashionwebapp\\api_fashionwebapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|solutionrelative:api_fashionwebapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|e:\\hn24_cpl.v_.net_07\\z_baitap\\final\\code\\api_fashionwebapp\\api_fashionwebapp\\viewmodels\\add_orderdetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAAFF0AA-7377-41A8-8AE2-A58B3204A037}|API_FashionWebApp\\API_FashionWebApp.csproj|solutionrelative:api_fashionwebapp\\viewmodels\\add_orderdetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,203 +38,98 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20250106111349_InitialDB.cs",
-              "DocumentMoniker": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Migrations\\20250106111349_InitialDB.cs",
-              "RelativeDocumentMoniker": "API_FashionWebApp\\Migrations\\20250106111349_InitialDB.cs",
-              "ToolTip": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Migrations\\20250106111349_InitialDB.cs",
-              "RelativeToolTip": "API_FashionWebApp\\Migrations\\20250106111349_InitialDB.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAgwBsAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T11:13:49.998Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "20250106110130_InitialDB1.cs",
-              "DocumentMoniker": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Migrations\\20250106110130_InitialDB1.cs",
-              "RelativeDocumentMoniker": "API_FashionWebApp\\Migrations\\20250106110130_InitialDB1.cs",
-              "ToolTip": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Migrations\\20250106110130_InitialDB1.cs",
-              "RelativeToolTip": "API_FashionWebApp\\Migrations\\20250106110130_InitialDB1.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T11:01:30.644Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "20250106105724_InitialDB.cs",
-              "DocumentMoniker": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Migrations\\20250106105724_InitialDB.cs",
-              "RelativeDocumentMoniker": "API_FashionWebApp\\Migrations\\20250106105724_InitialDB.cs",
-              "ToolTip": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Migrations\\20250106105724_InitialDB.cs",
-              "RelativeToolTip": "API_FashionWebApp\\Migrations\\20250106105724_InitialDB.cs",
+              "DocumentIndex": 4,
+              "Title": "I_ProductVariantService.cs",
+              "DocumentMoniker": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Services\\Interfaces\\I_ProductVariantService.cs",
+              "RelativeDocumentMoniker": "API_FashionWebApp\\Services\\Interfaces\\I_ProductVariantService.cs",
+              "ToolTip": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Services\\Interfaces\\I_ProductVariantService.cs",
+              "RelativeToolTip": "API_FashionWebApp\\Services\\Interfaces\\I_ProductVariantService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T10:57:24.909Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Cart.cs",
-              "DocumentMoniker": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Models\\Cart.cs",
-              "RelativeDocumentMoniker": "API_FashionWebApp\\Models\\Cart.cs",
-              "ToolTip": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Models\\Cart.cs",
-              "RelativeToolTip": "API_FashionWebApp\\Models\\Cart.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAkwAwAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T08:27:30.87Z",
+              "WhenOpened": "2025-01-07T21:35:51.537Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "db_FashionWebApp.cs",
-              "DocumentMoniker": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Data\\db_FashionWebApp.cs",
-              "RelativeDocumentMoniker": "API_FashionWebApp\\Data\\db_FashionWebApp.cs",
-              "ToolTip": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Data\\db_FashionWebApp.cs",
-              "RelativeToolTip": "API_FashionWebApp\\Data\\db_FashionWebApp.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwC0AAAAyAAAAAAAAAA==",
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "API_FashionWebApp\\Services\\OrderService.cs",
+              "ToolTip": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Services\\OrderService.cs",
+              "RelativeToolTip": "API_FashionWebApp\\Services\\OrderService.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAAAGwAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T08:18:20.64Z",
+              "WhenOpened": "2025-01-07T21:23:39.364Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AppUser.cs",
-              "DocumentMoniker": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Models\\AppUser.cs",
-              "RelativeDocumentMoniker": "API_FashionWebApp\\Models\\AppUser.cs",
-              "ToolTip": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Models\\AppUser.cs",
-              "RelativeToolTip": "API_FashionWebApp\\Models\\AppUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABfAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Add_OrderViewModel.cs",
+              "DocumentMoniker": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\ViewModels\\Add_OrderViewModel.cs",
+              "RelativeDocumentMoniker": "API_FashionWebApp\\ViewModels\\Add_OrderViewModel.cs",
+              "ToolTip": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\ViewModels\\Add_OrderViewModel.cs",
+              "RelativeToolTip": "API_FashionWebApp\\ViewModels\\Add_OrderViewModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T07:55:12.1Z",
+              "WhenOpened": "2025-01-07T20:54:33.822Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\appsettings.json",
-              "RelativeDocumentMoniker": "API_FashionWebApp\\appsettings.json",
-              "ToolTip": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\appsettings.json",
-              "RelativeToolTip": "API_FashionWebApp\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-06T08:00:33.992Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Role.cs",
-              "DocumentMoniker": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Models\\Role.cs",
-              "RelativeDocumentMoniker": "API_FashionWebApp\\Models\\Role.cs",
-              "ToolTip": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Models\\Role.cs",
-              "RelativeToolTip": "API_FashionWebApp\\Models\\Role.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T07:57:42.52Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Program.cs",
-              "RelativeDocumentMoniker": "API_FashionWebApp\\Program.cs",
-              "ToolTip": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Program.cs",
-              "RelativeToolTip": "API_FashionWebApp\\Program.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAgwHkAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T08:01:19.664Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "Order.cs",
               "DocumentMoniker": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Models\\Order.cs",
               "RelativeDocumentMoniker": "API_FashionWebApp\\Models\\Order.cs",
               "ToolTip": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Models\\Order.cs",
               "RelativeToolTip": "API_FashionWebApp\\Models\\Order.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAiwA0AAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAswEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T08:26:28.527Z"
+              "WhenOpened": "2025-01-07T20:54:01.9Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Category.cs",
-              "DocumentMoniker": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "API_FashionWebApp\\Models\\Category.cs",
-              "ToolTip": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Models\\Category.cs",
-              "RelativeToolTip": "API_FashionWebApp\\Models\\Category.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAA9wB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T08:25:55.11Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "OrderDetail.cs",
               "DocumentMoniker": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Models\\OrderDetail.cs",
               "RelativeDocumentMoniker": "API_FashionWebApp\\Models\\OrderDetail.cs",
               "ToolTip": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Models\\OrderDetail.cs",
               "RelativeToolTip": "API_FashionWebApp\\Models\\OrderDetail.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAwwCMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA7wBcAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T08:26:46.919Z"
+              "WhenOpened": "2025-01-07T20:54:03.5Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ProductVariant.cs",
-              "DocumentMoniker": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Models\\ProductVariant.cs",
-              "RelativeDocumentMoniker": "API_FashionWebApp\\Models\\ProductVariant.cs",
-              "ToolTip": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Models\\ProductVariant.cs",
-              "RelativeToolTip": "API_FashionWebApp\\Models\\ProductVariant.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "I_OrderService.cs",
+              "DocumentMoniker": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Services\\Interfaces\\I_OrderService.cs",
+              "RelativeDocumentMoniker": "API_FashionWebApp\\Services\\Interfaces\\I_OrderService.cs",
+              "ToolTip": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Services\\Interfaces\\I_OrderService.cs",
+              "RelativeToolTip": "API_FashionWebApp\\Services\\Interfaces\\I_OrderService.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T08:51:00.378Z"
+              "WhenOpened": "2025-01-07T20:54:18.351Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Product.cs",
-              "DocumentMoniker": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "API_FashionWebApp\\Models\\Product.cs",
-              "ToolTip": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Models\\Product.cs",
-              "RelativeToolTip": "API_FashionWebApp\\Models\\Product.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwC8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "Add_OrderDetailViewModel.cs",
+              "DocumentMoniker": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\ViewModels\\Add_OrderDetailViewModel.cs",
+              "RelativeDocumentMoniker": "API_FashionWebApp\\ViewModels\\Add_OrderDetailViewModel.cs",
+              "ToolTip": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\ViewModels\\Add_OrderDetailViewModel.cs",
+              "RelativeToolTip": "API_FashionWebApp\\ViewModels\\Add_OrderDetailViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T08:25:39.632Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "API_FashionWebApp\\Properties\\launchSettings.json",
-              "ToolTip": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Properties\\launchSettings.json",
-              "RelativeToolTip": "API_FashionWebApp\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-06T08:01:11.242Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "RefreshToken.cs",
-              "DocumentMoniker": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Models\\RefreshToken.cs",
-              "RelativeDocumentMoniker": "API_FashionWebApp\\Models\\RefreshToken.cs",
-              "ToolTip": "E:\\HN24_CPL.V_.NET_07\\z_BaiTap\\Final\\Code\\API_FashionWebApp\\API_FashionWebApp\\Models\\RefreshToken.cs",
-              "RelativeToolTip": "API_FashionWebApp\\Models\\RefreshToken.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAgwA8AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T07:56:38.505Z"
+              "WhenOpened": "2025-01-07T20:55:08.132Z",
+              "EditorCaption": ""
             }
           ]
         }

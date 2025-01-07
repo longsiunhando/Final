@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("API_FashionWebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54a9f18451576da585a35e7d376e2f8625634598")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+553762b3426951512141050071892891beeea2c1")]
 [assembly: System.Reflection.AssemblyProductAttribute("API_FashionWebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API_FashionWebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
