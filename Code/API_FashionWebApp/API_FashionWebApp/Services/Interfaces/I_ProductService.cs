@@ -8,8 +8,11 @@ namespace API_FashionWebApp.Services.Interfaces
         //Lấy danh sách tất cả các Product
         Task<List<Product>> GetAllProducts();
 
+        // Lấy product theo cateId
+        Task<List<Product>> GetProductsByCateId(Guid cateId);
+
         // Lấy Product theo id
-        Task<Product> GetProductById(int id);
+        Task<Product> GetProductById(Guid id);
 
         // Thêm mới Product
         Task AddProduct(Add_ProductViewModel ProductVm);

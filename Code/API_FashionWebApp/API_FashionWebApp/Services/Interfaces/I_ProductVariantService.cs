@@ -6,13 +6,17 @@ namespace API_FashionWebApp.Services.Interfaces
     {
         //Lấy danh sách tất cả các ProductVariant
         Task<List<ProductVariant>> GetAllProductVariants();
+        //Lấy danh sách các ProductVariant theo ProductId
+        Task<List<ProductVariant>> GetProductVariantsByProductId(Guid productId);
         // Lấy ProductVariant theo id
-        Task<ProductVariant> GetProductVariantById(int id);
+        Task<ProductVariant> GetProductVariantById(Guid id);
         // Thêm mới ProductVariant
         Task AddProductVariant(Add_ProductVariantViewModel ProductVariantVm);
         // Cập nhật ProductVariant
         Task UpdateProductVariant(Guid id, Add_ProductVariantViewModel ProductVariantVm);
-        // Xóa ProductVariant
+        // Xóa 1 ProductVariant
         Task DeleteProductVariant(Guid id);
+        // Xóa nhiều ProductVariant có ProductId = productId
+        Task DeleteProductVariantsByProductId(Guid productId);
     }
 }

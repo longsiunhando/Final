@@ -22,7 +22,7 @@ namespace API_FashionWebApp.Services
         }
 
         // Lấy category theo id
-        public async Task<Category> GetCategoryById(int id)
+        public async Task<Category> GetCategoryById(Guid id)
         {
             return await _dbContext.Categories.FindAsync(id);
         }

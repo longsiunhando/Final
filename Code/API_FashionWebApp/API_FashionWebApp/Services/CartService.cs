@@ -18,13 +18,16 @@ namespace API_FashionWebApp.Services
         {
             return await _context.Carts.ToListAsync();
         }
+        // Lấy Cart theo cartId và userId
+        public async Task<Cart> GetCartByUserIdAndCartId(string userId, Guid cartId)
+        {
+            return await _context.Carts.FirstOrDefaultAsync(c => c.UserId == userId && c.Id == cartId);
+        }
         // Lấy Cart theo id
         public async Task<Cart> GetCartById(int id)
         {
             return await _context.Carts.FindAsync(id);
         }
-
-
         // Lấy danh sách Cart theo UserId (danh sách các sản phẩm trong giỏ hàng)
         public async Task<List<Cart>> GetCartByUserId(string UserId)
         {
@@ -33,37 +36,43 @@ namespace API_FashionWebApp.Services
         // Thêm 1 sản phẩm mới vào giỏ hàng
         public async Task AddCart(Add_CartViewModel CartVm)
         {
-            if (CartVm.Quantity > 0)
+            // Kiểm tra user có user id có tồn tại không
+            if (_context.Users.FindAsync(CartVm.UserId) != null)
             {
-                // Kiểm tra xem sản phẩm đã tồn tại trong giỏ hàng chưa
-                if(await _context.Carts.FindAsync(CartVm.ProductVariantId) == null)
+                if (CartVm.Quantity > 0)
                 {
-                    var Cart = new Cart
+                    // Kiểm tra xem sản phẩm đã tồn tại trong giỏ hàng chưa
+                    if(await _context.Carts.FindAsync(CartVm.ProductVariantId) == null)
                     {
-                        Id = Guid.NewGuid(),
-                        UserId = CartVm.UserId,
-                        ProductVariantId = CartVm.ProductVariantId,
-                        Quantity = CartVm.Quantity,
-                        AddedAt = DateTime.UtcNow,
-                    };
-                    _context.Carts.AddAsync(Cart);
-                    await _context.SaveChangesAsync();
+                        var Cart = new Cart
+                        {
+                            Id = Guid.NewGuid(),
+                            UserId = CartVm.UserId,
+                            ProductVariantId = CartVm.ProductVariantId,
+                            Quantity = CartVm.Quantity,
+                            AddedAt = DateTime.UtcNow,
+                        };
+                        _context.Carts.AddAsync(Cart);
+                        await _context.SaveChangesAsync();
+                    }
+                    // Nếu đã tồn tại thì cập nhật số lượng sản phẩm
+                    else
+                    {
+                        var Cart = await _context.Carts.FindAsync(CartVm.ProductVariantId);
+                        Cart.Quantity += CartVm.Quantity;
+                        _context.Carts.Update(Cart);
+                        await _context.SaveChangesAsync();
+                    }    
                 }
-                // Nếu đã tồn tại thì cập nhật số lượng sản phẩm
-                else
-                {
-                    var Cart = await _context.Carts.FindAsync(CartVm.ProductVariantId);
-                    Cart.Quantity += CartVm.Quantity;
-                    _context.Carts.Update(Cart);
-                    await _context.SaveChangesAsync();
-                }    
+                else throw new Exception("Quantity must be greater than 0");
             }
-            else
-                throw new Exception("Quantity must be greater than 0");
+            else throw new Exception("UserId not found");
+
+
 
         }
         // Cập nhật Cart (Cập nhật số lượng sản phẩm trong giỏ)
-        public async Task UpdateCart(Guid id, int newQuantity)
+        public async Task UpdateQuantityCart(Guid id, int newQuantity)
         {
             var Cart = await _context.Carts.FindAsync(id);
             if (newQuantity>0)
@@ -81,7 +90,7 @@ namespace API_FashionWebApp.Services
                 throw new Exception("Quantity must be greater than 0");
         }
         // Xóa Cart (Xóa sản phẩm trong giỏ hàng)
-        public async Task DeleteCart(Guid id)
+        public async Task DeleteCartItem(Guid id)
         {
             var Cart = await _context.Carts.FindAsync(id);
             if (Cart != null)
@@ -92,5 +101,18 @@ namespace API_FashionWebApp.Services
             else
                 throw new Exception("Cart not found");
         }
-    }   
+        // Xóa tất cả các sản phẩm trong giỏ hàng của user
+        public async Task DeleteCartItemsByUserId(string userId)
+        {
+            var listCart = await _context.Carts.Where(c => c.UserId == userId).ToListAsync();
+            if (listCart != null && listCart.Any())
+            {
+                _context.Carts.RemoveRange(listCart);
+                await _context.SaveChangesAsync();
+            }
+            else
+                throw new Exception("Cart not found");
+        }
+
+    }
 }

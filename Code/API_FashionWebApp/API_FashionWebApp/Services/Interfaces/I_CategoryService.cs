@@ -8,7 +8,7 @@ namespace API_FashionWebApp.Services.Interfaces
         Task<List<Category>> GetAllCategories();
 
         // Lấy category theo id
-        Task<Category> GetCategoryById(int id);
+        Task<Category> GetCategoryById(Guid id);
 
         // Thêm mới category
         Task AddCategory(Add_CategoryViewModel categoryVm);

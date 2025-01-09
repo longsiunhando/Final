@@ -105,6 +105,7 @@ namespace API_FashionWebApp.Services
             }
             order.TotalPrice = totalPrice;
             await _context.SaveChangesAsync();
+            
         }
         // 8.Hủy đơn hàng (Admin, User)
         public async Task CancelOrder(Guid id)

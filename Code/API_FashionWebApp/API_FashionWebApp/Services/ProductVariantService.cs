@@ -18,8 +18,13 @@ namespace API_FashionWebApp.Services
         {
             return await _context.ProductVariants.ToListAsync();
         }
+        //Lấy danh sách các ProductVariant theo ProductId
+        public async Task<List<ProductVariant>> GetProductVariantsByProductId(Guid productId)
+        {
+            return await _context.ProductVariants.Where(pv => pv.ProductId == productId).ToListAsync();
+        }
         // Lấy ProductVariant theo id
-        public async Task<ProductVariant> GetProductVariantById(int id)
+        public async Task<ProductVariant> GetProductVariantById(Guid id)
         {
             return await _context.ProductVariants.FindAsync(id);
         }
@@ -55,7 +60,7 @@ namespace API_FashionWebApp.Services
             else
                 throw new Exception("ProductVariant not found");
         }
-        // Xóa ProductVariant
+        // Xóa 1 ProductVariant
         public async Task DeleteProductVariant(Guid id)
         {
             var ProductVariant = await _context.ProductVariants.FindAsync(id);
@@ -66,6 +71,20 @@ namespace API_FashionWebApp.Services
             }
             else
                 throw new Exception("ProductVariant not found");
+        }
+        // Xóa nhiều ProductVariant có ProductId = productId
+        public async Task DeleteProductVariantsByProductId(Guid productId)
+        {
+            var listProductVariants = await _context.ProductVariants.Where(pV =>  pV.ProductId == productId).ToListAsync();
+            if (listProductVariants != null)
+            {
+                foreach (var productVariant in listProductVariants)
+                {
+                    _context.ProductVariants.Remove(productVariant);
+                    await _context.SaveChangesAsync();
+                }
+            }
+            else throw new Exception($"ProductVariant with productId = {productId} not found");
         }
     }
 }

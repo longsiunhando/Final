@@ -19,8 +19,15 @@ namespace API_FashionWebApp.Services
             return await _dbContext.Products.ToListAsync();
         }
 
+        // Lấy product theo cateId
+        public async Task<List<Product>> GetProductsByCateId(Guid cateId)
+        {
+            return await _dbContext.Products.Where(p => p.CategoryId == cateId).ToListAsync();
+        }
+
+
         // Lấy Product theo id
-        public async Task<Product> GetProductById(int id)
+        public async Task<Product> GetProductById(Guid id)
         {
             return await _dbContext.Products.FindAsync(id);
         }
