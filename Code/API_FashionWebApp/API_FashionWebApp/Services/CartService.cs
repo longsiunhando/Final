@@ -67,9 +67,6 @@ namespace API_FashionWebApp.Services
                 else throw new Exception("Quantity must be greater than 0");
             }
             else throw new Exception("UserId not found");
-
-
-
         }
         // Cập nhật Cart (Cập nhật số lượng sản phẩm trong giỏ)
         public async Task UpdateQuantityCart(Guid id, int newQuantity)

@@ -49,7 +49,6 @@ namespace API_FashionWebApp.Services
             var ProductVariant = await _context.ProductVariants.FindAsync(id);
             if (ProductVariant != null)
             {
-                ProductVariant.ProductId = ProductVariantVm.ProductId;
                 ProductVariant.Type = ProductVariantVm.Type;
                 ProductVariant.Size = ProductVariantVm.Size;
                 ProductVariant.Price = ProductVariantVm.Price;
@@ -63,28 +62,97 @@ namespace API_FashionWebApp.Services
         // Xóa 1 ProductVariant
         public async Task DeleteProductVariant(Guid id)
         {
-            var ProductVariant = await _context.ProductVariants.FindAsync(id);
-            if (ProductVariant != null)
+            using var transaction = await _context.Database.BeginTransactionAsync();
+            try
             {
-                _context.ProductVariants.Remove(ProductVariant);
-                await _context.SaveChangesAsync();
+                // Tìm ProductVariant
+                var productVariant = await _context.ProductVariants.FindAsync(id);
+                if (productVariant != null)
+                {
+                    // Lấy thông tin ProductId liên kết với ProductVariant
+                    var productId = productVariant.ProductId;
+
+                    // Xóa ProductVariant
+                    _context.ProductVariants.Remove(productVariant);
+                    await _context.SaveChangesAsync();
+
+                    // Kiểm tra xem sản phẩm có còn ProductVariant nào không
+                    var remainingVariants = await _context.ProductVariants
+                        .AnyAsync(pv => pv.ProductId == productId);
+
+                    // Nếu không còn ProductVariant nào, xóa luôn Product
+                    if (!remainingVariants)
+                    {
+                        var product = await _context.Products.FindAsync(productId);
+                        if (product != null)
+                        {
+                            _context.Products.Remove(product);
+                            await _context.SaveChangesAsync();
+                        }
+                    }
+
+                    // Commit transaction
+                    await transaction.CommitAsync();
+                }
+                else
+                {
+                    throw new Exception("ProductVariant not found");
+                }
             }
-            else
-                throw new Exception("ProductVariant not found");
+            catch
+            {
+                // Rollback transaction nếu gặp lỗi
+                await transaction.RollbackAsync();
+                throw;
+            }
         }
         // Xóa nhiều ProductVariant có ProductId = productId
         public async Task DeleteProductVariantsByProductId(Guid productId)
         {
-            var listProductVariants = await _context.ProductVariants.Where(pV =>  pV.ProductId == productId).ToListAsync();
-            if (listProductVariants != null)
+            using var transaction = await _context.Database.BeginTransactionAsync();
+            try
             {
-                foreach (var productVariant in listProductVariants)
+                // Lấy danh sách các ProductVariant liên kết với ProductId
+                var listProductVariants = await _context.ProductVariants
+                    .Where(pV => pV.ProductId == productId)
+                    .ToListAsync();
+
+                if (listProductVariants != null && listProductVariants.Any())
                 {
-                    _context.ProductVariants.Remove(productVariant);
+                    // Xóa tất cả các ProductVariant liên kết
+                    _context.ProductVariants.RemoveRange(listProductVariants);
                     await _context.SaveChangesAsync();
+
+                    // Kiểm tra xem sản phẩm có còn ProductVariant nào không
+                    var remainingVariants = await _context.ProductVariants
+                        .AnyAsync(pv => pv.ProductId == productId);
+
+                    // Nếu không còn ProductVariant nào, xóa luôn Product
+                    if (!remainingVariants)
+                    {
+                        var product = await _context.Products.FindAsync(productId);
+                        if (product != null)
+                        {
+                            _context.Products.Remove(product);
+                            await _context.SaveChangesAsync();
+                        }
+                    }
+
+                    // Commit transaction
+                    await transaction.CommitAsync();
+                }
+                else
+                {
+                    throw new Exception($"ProductVariant with productId = {productId} not found");
                 }
             }
-            else throw new Exception($"ProductVariant with productId = {productId} not found");
+            catch
+            {
+                // Rollback transaction nếu gặp lỗi
+                await transaction.RollbackAsync();
+                throw;
+            }
         }
+
     }
 }

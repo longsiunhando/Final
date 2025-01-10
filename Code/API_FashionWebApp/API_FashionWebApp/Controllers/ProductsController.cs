@@ -168,20 +168,14 @@ namespace API_FashionWebApp.Controllers
 
 
 // Add dữ liệu
-        /* Vì mỗi product có ít nhất 1 biền thể (quần áo chỉ có 1 size hoặc 1 màu duy nhất nên khi tạo 1 product mới sẽ tạo 1 variant kèm theo. */
         [HttpPost("add-new-product")]
-        public async Task<IActionResult> AddNewProduct(Add_ProductViewModel productVm, Add_ProductVariantViewModel variantVm)
+        public async Task<IActionResult> AddNewProduct(Add_ProductViewModel productVm)
         {
             try
             {
                 await _productService.AddProduct(productVm);
-                await _productVariantService.AddProductVariant(variantVm);
                 // Gộp hai tham số vào một đối tượng trả về
-                return Ok(new
-                {
-                    Product = productVm,
-                    Variant = variantVm
-                });
+                return Ok(productVm);
             }
             catch (Exception ex)
             {

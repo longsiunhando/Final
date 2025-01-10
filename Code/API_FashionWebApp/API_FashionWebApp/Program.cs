@@ -1,5 +1,7 @@
 using API_FashionWebApp.Data;
 using API_FashionWebApp.Models;
+using API_FashionWebApp.Services;
+using API_FashionWebApp.Services.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -86,9 +88,12 @@ builder.Services.AddAuthentication(config =>
 
 
 //Registration Service 
-//builder.Services.AddScoped<I_QuizService, QuizService>();
-//builder.Services.AddScoped<I_QuestionService, QuestionService>();
-//builder.Services.AddScoped<I_AnswerService, AnswerService>();
+builder.Services.AddScoped<I_CategoryService, CategoryService>();
+builder.Services.AddScoped<I_ProductService, ProductService>();
+builder.Services.AddScoped<I_ProductVariantService, ProductVariantService>();
+builder.Services.AddScoped<I_CartService, CartService>();
+builder.Services.AddScoped<I_OrderService, OrderService>();
+builder.Services.AddScoped<I_OrderDetailService, OrderDetailService>();
 
 
 

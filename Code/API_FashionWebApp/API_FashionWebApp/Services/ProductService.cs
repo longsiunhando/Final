@@ -33,21 +33,65 @@ namespace API_FashionWebApp.Services
         }
 
         // Thêm mới Product
+        /* Vì mỗi product có ít nhất 1 biền thể (quần áo chỉ có 1 size hoặc 1 màu duy nhất nên khi tạo 1 product mới sẽ tạo 1 variant kèm theo. */
         public async Task AddProduct(Add_ProductViewModel ProductVm)
         {
-            var Product = new Product
+            // Bắt đầu transaction
+            using (var transaction = await _dbContext.Database.BeginTransactionAsync())
             {
-                Id = Guid.NewGuid(),
-                Name = ProductVm.Name,
-                ImageLink = ProductVm.ImageLink,
-                Description = ProductVm.Description,
-                Price = ProductVm.Price,
-                CategoryId = ProductVm.CategoryId,
-                IsActive = ProductVm.IsActive,
-                CreatedAt = DateTime.UtcNow,
-            };
-            _dbContext.Products.Add(Product);
-            await _dbContext.SaveChangesAsync();
+                try
+                {
+                    // Tạo đối tượng Product mới
+                    var product = new Product
+                    {
+                        Id = Guid.NewGuid(),
+                        Name = ProductVm.Name,
+                        ImageLink = ProductVm.ImageLink,
+                        Description = ProductVm.Description,
+                        Price = ProductVm.Price,
+                        CategoryId = ProductVm.CategoryId,
+                        IsActive = ProductVm.IsActive,
+                        CreatedAt = DateTime.UtcNow,
+                    };
+
+                    // Thêm Product vào cơ sở dữ liệu
+                    _dbContext.Products.Add(product);
+                    await _dbContext.SaveChangesAsync(); // Lưu Product để lấy Id
+
+                    // Kiểm tra nếu có ProductVariants
+                    if (ProductVm.VariantsVm != null && ProductVm.VariantsVm.Any())
+                    {
+                        var productVariants = new List<ProductVariant>();
+
+                        foreach (var item in ProductVm.VariantsVm)
+                        {
+                            // Tạo các ProductVariant cho sản phẩm này
+                            var productVariant = new ProductVariant
+                            {
+                                ProductId = product.Id, // Gán ProductId cho ProductVariant
+                                Type = item.Type,
+                                Size = item.Size,
+                                Price = item.Price ?? product.Price, // Nếu Price không có thì dùng giá sản phẩm chính
+                                Quantity = item.Quantity
+                            };
+                            productVariants.Add(productVariant);
+                        }
+
+                        // Thêm tất cả ProductVariants vào cơ sở dữ liệu
+                        _dbContext.ProductVariants.AddRange(productVariants);
+                        await _dbContext.SaveChangesAsync(); // Lưu tất cả ProductVariants
+                    }
+
+                    // Commit transaction sau khi thêm sản phẩm và các biến thể
+                    await transaction.CommitAsync();
+                }
+                catch (Exception ex)
+                {
+                    // Rollback transaction nếu có lỗi
+                    await transaction.RollbackAsync();
+                    throw new Exception("Error during AddProduct: " + ex.Message, ex);
+                }
+            }
         }
 
         // Cập nhật Product

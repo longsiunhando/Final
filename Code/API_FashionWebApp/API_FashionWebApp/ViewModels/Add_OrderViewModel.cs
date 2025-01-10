@@ -12,5 +12,6 @@ namespace API_FashionWebApp.ViewModels
         public decimal ShippingFee { get; set; }
         public PaymentMethod PaymentMethod { get; set; }
         public string ShippingAddress { get; set; }
+        public Add_OrderDetailViewModel[] OrderDetailsVm { get; set; } // Khi thêm 1 order mới phải có ít nhất 1 orderDetail
     }
 }

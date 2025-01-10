@@ -15,11 +15,13 @@ namespace API_FashionWebApp.Services.Interfaces
         Task UpdateOrderStatus(Guid id, OrderStatus Status);
         // Xóa đơn hàng (Admin)
         Task DeleteOrder(Guid id);
-        // Lấy về đơn hàng theo UserId (Admin, User)
-        Task<List<Order>> GetOrderByUserId(string UserId, Guid OrderId);
+        // Lấy về danh sách các đơn hàng theo UserId (Admin, User)
+        Task<List<Order>> GetOrdersByUserId(string userId);
+        // Lấy về một đơn hàng theo UserId và OrderId (User)
+        Task<Order> GetOrderByIdForUser(string UserId, Guid OrderId);
         // Thêm đơn hàng mới (User)
-        Task AddOrder(Add_OrderViewModel OrderVm, Add_OrderDetailViewModel[] listOderDetailVm);
-        // Hủy đơn hàng (Admin, User)
+        Task AddOrder(Add_OrderViewModel OrderVm);
+        // Hủy đơn hàng (User)
         Task CancelOrder(Guid id);
 
     }
